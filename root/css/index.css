@@ -1,0 +1,102 @@
+/* Order: general, class, ID, ATs */
+/* Debug tools:
+border: solid teal 3px;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #777;
+  height: 110vh;
+}
+
+button {
+  padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: fntRibbon;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: ;
+}
+
+p {
+  font-family: fntRegina;
+  font-weight: 100;
+}
+
+div.divMenuButton {
+  background-color: blue;
+  border-radius: 100%;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  left: 95vw;
+  /* May need to fix with JS or trickery bc it isn't responsive*/
+  position: fixed;
+  top: 0;
+  width: 50px;
+}
+
+div.divMenuMain {
+  background-color: brown;
+  height: 100vh;
+  position: fixed;
+  width: 40vw;
+
+  left: 95vw; top: 0;
+  /*95vw because of testing*/
+}
+
+form#formSignIn {
+  margin: 0 auto;
+  width:300px;
+  /* width should be to fit its contents,
+   but contents are block, so maybe that's why.
+   NEED TO FIX THIS */
+}
+
+div#divNews {
+  text-align: center;
+}
+
+div#divSignUpInfo {
+  text-align: center;
+}
+
+input#tiUsername, input#tiPassword {
+  border-color: black;
+  border-width: 3px;
+  /* Not working to change all colors */
+  display: block;
+  height: 50px;
+  width: 300px;
+}
+
+input#tiUsername {
+  border-radius: 20px 20px 0 0;
+}
+
+input#tiPassword {
+  border-radius: 0 0 20px 20px;
+}
+
+h1#h1SignIn {
+  text-align: center;
+}
+
+@font-face {
+  font-family: fntRibbon;
+  src: url("../fonts/fntRibbon.otf");
+}
+
+@font-face {
+  font-family: fntRegina;
+  src: url("../fonts/fntRegina.otf");
+}
